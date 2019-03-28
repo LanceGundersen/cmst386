@@ -5,6 +5,23 @@ html {
   overflow-backgroudn: red;
 }
 
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+p {
+  font-size: 120%;
+  line-height: 150%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,21 +65,11 @@ body {
   background-color: rgba(109, 129, 156, 0.7);
 }
 
-h1 {
-  font-size: 250%;
-}
-
-h2 {
-  font-size: 200%;
-}
-
-h3 {
-  font-size: 160%;
-}
-
-p {
-  font-size: 120%;
-  line-height: 150%;
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
 }
 
 .credit {
@@ -72,7 +79,7 @@ p {
   color: #e4e7ec;
 }
 
-.slide {
+.page {
   position: relative;
   padding: 25vh 10%;
   min-height: 100vh;
@@ -83,7 +90,7 @@ p {
           transform-style: inherit;
 }
 
-.slide:before {
+.page:before {
   content: "";
   position: absolute;
   top: 0;
@@ -92,12 +99,12 @@ p {
   right: 0;
 }
 
-.slide:nth-child(2n) .section {
+.page:nth-child(2n) .section {
   margin-left: 0;
   margin-right: auto;
 }
 
-.slide:nth-child(2n + 1) .section {
+.page:nth-child(2n + 1) .section {
   margin-left: auto;
   margin-right: 0;
 }
@@ -111,27 +118,24 @@ p {
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-.slide, .slide:before {
+.page, .page:before {
   background: 50% 50% / cover;
 }
 
-.header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
+.page-color {
+  background: #e4e7ec;
 }
 
-#title {
+.home {
   background-image: url("./assets/home-bg.jpg");
   z-index: 2;
 }
 
-#title h1 {
+.home h1 {
   -webkit-transform: translateZ(0.25px) scale(0.75);
           transform: translateZ(0.25px) scale(0.75);
-  -webkit-transform-origin: 100% 500%;
-          transform-origin: 100% 500%;
+  -webkit-transform-origin: 100% 175%;
+          transform-origin: 100% 175%;
 }
 
 .general:before {
@@ -151,13 +155,102 @@ p {
           transform: translateZ(-1px) scale(2);
 }
 
+.exercise1 {
+  background-image: url("./assets/exercise1-bg.jpg");
+  z-index: 2;
+}
+
+.gallery h2 {
+  text-align: center;
+}
+
+.gallery h3 {
+  font-size: 110%;
+}
+
+.gallery p {
+  font-size: 90%;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item:nth-child(1) {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+.gallery-item:nth-child(2) {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+.gallery-item:nth-child(3) {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
+.gallery-item:nth-child(4) {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
+
 footer {
   background-color: #6d819c;
   background-color-display: flex;
   z-index: 2;
 }
 
-footer {
+.footer-nav {
   position: relative;
   height: 75vh;
   width: 100vw;
@@ -180,14 +273,14 @@ footer {
   z-index: 3;
 }
 
-footer a {
+.footer-nav a {
   display: block;
   text-decoration: none;
   padding: 1em;
   color: #e4e7ec;
 }
 
-footer a:hover {
+.footer-nav a:hover {
   color: #e4e7ec;
   background-color: rgba(109, 129, 156, 0.7);
 }

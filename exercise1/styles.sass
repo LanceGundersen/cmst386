@@ -1,15 +1,32 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 
+// Color Styles
 $primary: #6d819c
 $secondary: #e4e7ec
 $accent: #55967e
 $accent-alt: #263959
 
+
+// Resets
 html
 	height: 100%
 	overflow: hidden
   backgroudn: red
 
+h1
+	font-size: 250%
+
+h2
+  font-size: 200%
+
+h3
+  font-size: 160%
+
+p
+	font-size: 120%
+	line-height: 150%
+
+// Parallax Initialize
 body
 	margin: 0
 	padding: 0
@@ -38,26 +55,22 @@ body
       color: $secondary
       background-color: rgba($primary, 0.7)
 
-h1
-	font-size: 250%
+// h1 Text Styling
+.header
+	text-align: center
+	font-size: 175%
+	color: #fff
+	text-shadow: 0 2px 2px #000
 
-h2
-  font-size: 200%
-
-h3
-  font-size: 160%
-
-p
-	font-size: 120%
-	line-height: 150%
-
+// Photo Crediting
 .credit
   position: fixed
   bottom: 10px
   right: 25px
   color: $secondary
 
-.slide
+// Parallax enabled section
+.page
 	position: relative
 	padding: 25vh 10%
 	min-height: 100vh
@@ -80,6 +93,7 @@ p
       margin-left: auto
       margin-right: 0
 
+// Page Sections (where text is contained)
 .section
 	width: 60%
 	padding: 5%
@@ -87,21 +101,20 @@ p
 	background: $secondary
 	box-shadow: 0 0 8px rgba(0, 0, 0, .2)
 
-.slide, .slide:before
+.page, .page:before
 	background: 50% 50% / cover
 
-.header
-	text-align: center
-	font-size: 175%
-	color: #fff
-	text-shadow: 0 2px 2px #000
+.page-color
+  background: $secondary
 
-#title
+
+// Home page styling
+.home
 	background-image: url('./assets/home-bg.jpg')
 	z-index: 2
 	h1
 		transform: translateZ(.25px) scale(.75)
-		transform-origin: 100% 500%
+		transform-origin: 100% 175%
 
 .general
 	&:before
@@ -117,27 +130,73 @@ p
 		background-image: url('./assets/computer-bg.jpg')
 		transform: translateZ(-1px) scale(2)
 
+// Excercise 1 page styling
+.exercise1
+  background-image: url('./assets/exercise1-bg.jpg')
+  z-index: 2
+
+.gallery
+  h2
+    text-align: center
+  h3
+    font-size: 110%
+  p
+    font-size: 90%
+
+.gallery-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-content: center
+  align-items: center
+
+.gallery-item
+  margin: 10px
+
+.gallery-item:nth-child(1)
+  order: 0
+  flex: 0 1 auto
+  align-self: auto
+
+.gallery-item:nth-child(2)
+  order: 0
+  flex: 0 1 auto
+  align-self: auto
+
+.gallery-item:nth-child(3)
+  order: 0
+  flex: 0 1 auto
+  align-self: auto
+
+.gallery-item:nth-child(4)
+  order: 0
+  flex: 0 1 auto
+  align-self: auto
+
+// Footer sytling
 footer
 	background-color: $primary
   display: flex
 	z-index: 2
-  nav
-    position: relative
-    height: 75vh
-    width: 100vw
-    text-align: center
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: center
-    align-items: center
-    z-index: 3
-    a
-      display: block
-      text-decoration: none
-      padding: 1em
+
+.footer-nav
+  position: relative
+  height: 75vh
+  width: 100vw
+  text-align: center
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+  z-index: 3
+  a
+    display: block
+    text-decoration: none
+    padding: 1em
+    color: $secondary
+    &:hover
       color: $secondary
-      &:hover
-        color: $secondary
-        background-color: rgba($primary, 0.7)
+      background-color: rgba($primary, 0.7)
 
