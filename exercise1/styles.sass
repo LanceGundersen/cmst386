@@ -1,128 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 $primary: #6d819c
 $secondary: #e4e7ec
 $accent: #55967e
 $accent-alt: #263959
 
-body,
 html
-  margin: 0
+	height: 100%
+	overflow: hidden
+  backgroudn: red
 
-.body-bg
+body
+	margin: 0
+	padding: 0
+	perspective: 1px
+	transform-style: preserve-3d
+	height: 100%
+	overflow-y: scroll
+	overflow-x: hidden
+	font-family: Nunito
+
+.main-nav
   position: fixed
-  background: url('./assets/body-bg.jpg') no-repeat center
-  background-size: cover
-  background-color: rgba(0,0,0, 0.9)
-  background-blend-mode: multiply
-  background-color: $secondary
-  height: 100%
+  top: 5px
   width: 100%
-  z-index: -1
-  overflow-x: hidden
-
-  h1
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin-bottom: 10px
+  z-index: 3
+  a
+    display: block
+    text-decoration: none
+    padding: 1em
     color: $secondary
-    position: fixed
-    top: 10px
-    right: 100px
+    &:hover
+      color: $secondary
+      background-color: rgba($primary, 0.7)
 
-  span
-    color: $primary
-    position: fixed
-    bottom: 10px
-    right: 10px
+h1
+	font-size: 250%
 
-.content-bg
-  position: absolute
-  top: 0
-  background-color: $secondary
-  box-shadow: -2px -5px 5px 0px rgba(0,0,0,0.3)
-  min-height: 500px
-  margin: 150px 0px
-  width: 100%
-  height: 1100px
-  transform: skewY(-5deg)
-  z-index: -1
+h2
+  font-size: 200%
 
-.content
-  position: absolute
-  top: 50px
-  margin: 190px 10vw
-  height: 100%
-  background-color: transparent
+h3
+  font-size: 160%
 
+p
+	font-size: 120%
+	line-height: 150%
+
+.credit
+  position: fixed
+  bottom: 10px
+  right: 25px
+  color: $secondary
+
+.slide
+	position: relative
+	padding: 25vh 10%
+	min-height: 100vh
+	width: 100vw
+	box-sizing: border-box
+	transform-style: inherit
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	&:nth-child(2n)
+		.section
+			margin-left: 0
+			margin-right: auto
+	&:nth-child(2n + 1)
+    .section
+      margin-left: auto
+      margin-right: 0
+
+.section
+	width: 60%
+	padding: 5%
+	border-radius: 5px
+	background: $secondary
+	box-shadow: 0 0 8px rgba(0, 0, 0, .2)
+
+.slide, .slide:before
+	background: 50% 50% / cover
+
+.header
+	text-align: center
+	font-size: 175%
+	color: #fff
+	text-shadow: 0 2px 2px #000
+
+#title
+	background-image: url('./assets/home-bg.jpg')
+	z-index: 2
+	h1
+		transform: translateZ(.25px) scale(.75)
+		transform-origin: 100% 500%
+
+.general
+	&:before
+		background-image: url(./assets/info-bg.jpg)
+		transform: translateZ(-1px) scale(2)
+
+.design
+	background-image: url('./assets/design-bg.jpg')
+	z-index: 2
+
+.computer
+	&:before
+		background-image: url('./assets/computer-bg.jpg')
+		transform: translateZ(-1px) scale(2)
+
+footer
+	background-color: $primary
+  display: flex
+	z-index: 2
   nav
+    position: relative
+    height: 75vh
+    width: 100vw
+    text-align: center
     display: flex
     flex-direction: row
+    flex-wrap: nowrap
     justify-content: center
-    z-index: 2
-    margin-bottom: 10px
+    align-items: center
+    z-index: 3
     a
       display: block
       text-decoration: none
       padding: 1em
-      color: $primary
+      color: $secondary
       &:hover
         color: $secondary
         background-color: rgba($primary, 0.7)
-  // h1
-  //   position: relative
-  //   color: $accent
-  //   bottom: 75px
-  //   left: 100px
-  //   transform: skewY(-5deg)
-
-
-
-  .container
-    display: flex
-    flex-direction: row
-    flex-wrap: no-wrap
-    justify-content: center
-    align-content: flex-start
-
-    .item
-      width: calc(100% / 3 * 0.95)
-      background: rgba($primary, 0.1)
-      border-radius: 10px
-      color: $accent-alt
-      margin: 2px
-      padding: 10px
-      align-self: auto
-      h2
-        text-align: center
-
-    .item:nth-child(1)
-      flex: 0 1 auto
-    .item:nth-child(2)
-      flex: 0 1 auto
-
-    .item:nth-child(3)
-      flex: 0 1 auto
-
-
-//   background: $secondary
-//   color: $secondary
-
-// h1
-//   // margin: 0
-//   text-align: center
-
-// .container
-//   background: url('./assets/landing-bg.jpg') no-repeat center
-//   background-size: cover
-//   background-color: rgba($accent-alt, .75)
-//   background-blend-mode: multiply
-//   height: 100%
-//   width: 100%
-//   nav
-//     display: flex
-//     flex-direction: row
-//     justify-content: center
-//     a
-//       display: block
-//       text-decoration: none
-//       padding: 1em
-//       color: $secondary
-//       &:hover
-//         background-color: $accent-alt
 
