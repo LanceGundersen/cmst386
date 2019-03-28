@@ -127,7 +127,7 @@ body {
 }
 
 .home {
-  background-image: url("./assets/home-bg.jpg");
+  background-image: url("../assets/home-bg.jpg");
   z-index: 2;
 }
 
@@ -139,24 +139,24 @@ body {
 }
 
 .general:before {
-  background-image: url(./assets/info-bg.jpg);
+  background-image: url(../assets/info-bg.jpg);
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
 }
 
 .design {
-  background-image: url("./assets/design-bg.jpg");
+  background-image: url("../assets/design-bg.jpg");
   z-index: 2;
 }
 
 .computer:before {
-  background-image: url("./assets/computer-bg.jpg");
+  background-image: url("../assets/computer-bg.jpg");
   -webkit-transform: translateZ(-1px) scale(2);
           transform: translateZ(-1px) scale(2);
 }
 
 .exercise1 {
-  background-image: url("./assets/exercise1-bg.jpg");
+  background-image: url("../assets/exercise1-bg.jpg");
   z-index: 2;
 }
 
