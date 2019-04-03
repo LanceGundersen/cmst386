@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito)
+
+$primary: #6a60a9
+$secondary: #fffcf0
+$alternate: #dedcee
+$accent: #fbd14b
+
+
+body,
+html
+  margin: 0
+  font-family: Nunito
+
+/* Not a responsive container! */
+.container
+  display: grid
+  grid-template-columns: 219px 1fr
+  grid-template-rows: 1fr
+  grid-template-areas: "aside content" "aside content"
+
+aside
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows:  0.1fr 1fr 0.05fr
+  grid-template-areas: "header" "nav" "footer"
+
+  background: $primary
+  height: 100vh
+  position: sticky
+  top: 0
+
+header
+  grid-area: header
+  text-align: center
+  font-size: 0.75em
+  color: $accent
+
+nav
+  grid-area: nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-end
+  padding: 1em
+  a
+    color: $secondary
+    font-size: 1.1em
+    line-height: 1.6em
+    text-decoration: none
+    &:hover
+      color: $accent
+
+footer
+  grid-area: footer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  a
+    font-size: 0.7em
+    color: $accent
+    margin: 0 0.5em
+    &:hover
+      color: $secondary
+
+main
+  grid-area: content
+  padding: 1em
+

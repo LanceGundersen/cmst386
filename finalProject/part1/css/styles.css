@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+body,
+html {
+  margin: 0;
+  font-family: Nunito;
+}
+
+/* Not a responsive container! */
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 219px 1fr;
+      grid-template-columns: 219px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "aside content" "aside content";
+}
+
+aside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.1fr 1fr 0.05fr;
+      grid-template-rows: 0.1fr 1fr 0.05fr;
+      grid-template-areas: "header" "nav" "footer";
+  background: #6a60a9;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  text-align: center;
+  font-size: 0.75em;
+  color: #fbd14b;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1em;
+}
+
+nav a {
+  color: #fffcf0;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fbd14b;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer a {
+  font-size: 0.7em;
+  color: #fbd14b;
+  margin: 0 0.5em;
+}
+
+footer a:hover {
+  color: #fffcf0;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: content;
+  padding: 1em;
+}
+/*# sourceMappingURL=styles.css.map */
