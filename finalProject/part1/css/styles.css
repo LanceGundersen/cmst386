@@ -107,4 +107,8 @@ main {
   grid-area: content;
   padding: 1em;
 }
+
+.sitemap {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
