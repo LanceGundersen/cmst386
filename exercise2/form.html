@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="contact, email, submission, form, message" />
+    <title>Form - Lance Gundersen</title>
+    <link rel="stylesheet" href="../exercise1/css/styles.css" />
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <a href="../exercise1/index.html">Home</a>
+      <a href="../exercise1/ex1.html">Exercise 1</a>
+      <a href="index.html">Exercise 2</a>
+      <a href="#">Exercise 3</a>
+      <a href="#">Exercise 4</a>
+    </nav>
+
+    <div class="page--alt page-color--alt">
+      <div class="form-container">
+        <h1>Contact Me</h1>
+        <form
+          action="mailto:gundersen.lance@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <fieldset>
+            <input placeholder="Your Name" type="text" required autofocus />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Address" type="text" />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" required />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Home Phone Number" type="tel" />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Cell Phone Number" type="tel" />
+          </fieldset>
+
+          <fieldset>
+            <textarea placeholder="Questions/Comments.."></textarea>
+          </fieldset>
+          <p>Employed/Student/Retired</p>
+          <fieldset class="check">
+            <label><input type="checkbox" value="employed" /> Employed</label>
+            <label><input type="checkbox" value="student" /> Student</label>
+            <label><input type="checkbox" value="retired" /> Retired</label>
+          </fieldset>
+          <p>Gender</p>
+          <fieldset class="radios">
+            <label><input type="radio" value="male" /> Male</label>
+            <label><input type="radio" value="female" /> Female</label>
+            <label><input type="radio" value="other" /> Other</label>
+          </fieldset>
+          <fieldset>
+          <p>Choose Age Range</p>
+            <select id="age">
+              <option value="1">Choose One</option>
+              <option value="1">18 - 30</option>
+              <option value="1">30 - 40</option>
+              <option value="1">40 - 50</option>
+              <option value="1">50 - 65+</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <button
+              type="submit"
+            >
+              Submit
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer-nav">
+      <nav>
+        <a href="../exercise1/index.html">Home</a>
+        <a href="../exercise1/ex1.html">Exercise 1</a>
+        <a href="index.html">Exercise 2</a>
+        <a href="#">Exercise 3</a>
+        <a href="#">Exercise 4</a>
+      </nav>
+      <div class="validators">
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c24%2Fexercise2%2Fform.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+          >CSS Validator</a
+        >
+        <a
+          href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386c24%2Fexercise2%2Fform.html"
+          >HTML5 Validator</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
