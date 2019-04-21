@@ -21,6 +21,11 @@ p {
   line-height: 150%;
 }
 
+.content-reset:before {
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
+
 hr {
   border: 0;
   height: 1px;
@@ -277,11 +282,6 @@ body {
   z-index: 2;
 }
 
-.exercise2-content:before {
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
-}
-
 .boxy {
   margin: 15vh 10%;
   padding: 2%;
@@ -403,6 +403,90 @@ form button:hover {
   position: relative;
   top: -1px;
   *overflow: hidden;
+}
+
+.exercise3 {
+  background-image: url("../assets/exercise3-bg.jpg");
+  z-index: 2;
+}
+
+ul.breadcrumb {
+  z-index: 1001;
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #55967e;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #55967e;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #e4e7ec;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  height: 50vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50vw;
+  z-index: 3;
+}
+
+.modal-content {
+  border-radius: 6px;
+  background-color: #e4e7ec;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 
 footer {

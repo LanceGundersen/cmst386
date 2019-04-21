@@ -1,79 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="SEO, learning, less, sass, javascript" />
+    <title>Exercise 3 - Lance Gundersen</title>
+    <meta
+      name="description"
+      content="Exercise 3, xml sitemaps, javascript examples and css preprocessing."
+    />
+    <link rel="stylesheet" href="../exercise1/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="SEO, learning, less, sass, javascript">
-  <title>Exercise 3 - Lance Gundersen</title>
-  <meta name="description" content="Exercise 3, xml sitemaps, javascript examples and css preprocessing."/>
-  <link rel="stylesheet" href="../exercise1/css/styles.css">
-</head>
-
-<body>
-  <nav class="main-nav">
-    <a href="../exercise1/index.html">Home</a>
-    <a href="../exercise1/ex1.html">Exercise 1</a>
-    <a href="../exercise2/index.html">Exercise 2</a>
-    <a href="index.html">Exercise 3</a>
-    <a href="#">Exercise 4</a>
-  </nav>
-  <div class="exercise2 page">
-    <div class="header">
-      <h1>Exercise 3 <br> Lance Gundersen</h1>
-    </div>
-    <span class="credit">Photo by <a href="https://unsplash.com/photos/4H67yWXO2-M">Kobu Agency</a> on Unsplash</span>
-  </div>
-
-  <div class="exercise2-content video">
-    <div class="boxy">
-      <h2>What you want to learn in this course</h2>
-      <p>Since I have been developing website both professionally and as a freelancer for many years now I didn't expect to learn anything earth shattering. However, I learned early on that I can learn a lot from any course and any group of people. This all said I am hopeful to revisit the basics along with some unknown tooling, tips and tricks. Often the past gets lost or forgotten when in reality it seems to just repeat itself in new "cool" tricks. I will close out that this course so far has reminded me of <a href="https://css-naked-day.github.io/">CSS Naked Day</a>, a day which should be remembered when creating websites!</p>
-      <a class="btn btn--fancy" href="form.html">Contact Me</a>
-      <p class="bold">Relevant Links</p>
-      <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Learn">MDN Docs</a></li>
-        <li><a href="https://support.google.com/webmasters/answer/7451184?hl=en">Google SEO Starter Guide</a></li>
-        <li><a href="https://webassembly.org/">WebAssembly</a></li>
-        <li><a href="https://material.io/design/">Material Design</a></li>
-        <li><a href="http://es6-features.org">ES6 Features</a></li>
-      </ul>
-      <hr>
-      <h2>Video</h2>
-      <h3>YouTube</h3>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4G9c5swUyOc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <h3>Alternate Formats</h3>
-      <h4>WebM</h4>
-      <div class="video-container">
-        <video width="560" height="315" src="videos/intro.webm" controls></video>
-      </div>
-      <h4>MP4</h4>
-      <div class="video-container">
-        <video width="560" height="315" src="videos/intro.mp4" controls></video>
-      </div>
-      <h4>OGV</h4>
-      <div class="video-container">
-        <video width="560" height="315" src="videos/intro.ogv" controls></video>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer-nav">
-    <nav>
+  <body>
+    <nav class="main-nav">
       <a href="../exercise1/index.html">Home</a>
       <a href="../exercise1/ex1.html">Exercise 1</a>
       <a href="../exercise2/index.html">Exercise 2</a>
       <a href="index.html">Exercise 3</a>
       <a href="#">Exercise 4</a>
     </nav>
-    <div class="validators">
-      <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c24%2Fexercise1%2Fex1.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS Validator</a>
-      <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386c24%2Fexercise2%2Findex.html">HTML5 Validator</a>
+    <div class="exercise3 page content-reset">
+      <div class="header">
+        <h1>
+          Exercise 3 <br />
+          Lance Gundersen
+        </h1>
+        <script>
+          document.write(Date())
+        </script>
+        <ul class="breadcrumb">
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#links">SEO - Links</a></li>
+          <li><a href="#xml">SEO - XML</a></li>
+        </ul>
+      </div>
+      <span class="credit"
+        >Photo by
+        <a href="https://unsplash.com/photos/ruiU36AR5zo">Pankaj Patel</a> on
+        Unsplash</span
+      >
     </div>
-  </footer>
-</body>
 
+    <div class="page--alt">
+      <h2 id="javascript">JavaScript</h2>
+      <h3>Date</h3>
+      <p>
+        The JavaScript Date() object for the current date and time according to
+        operating system settings as no arguements are being passed. Writing
+        directly to the DOM like I am doing in this example isn't ideal as it
+        has the potential to re-render the DOM and it slow rendering of the
+        page.
+      </p>
+      <pre>document.write(Date())</pre>
+      <p>
+        Read more about the Date() method on the
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date"
+          >MDN Documentation</a
+        >.
+      </p>
+      <h3>Popup</h3>
+      <p>
+        The final project will likely have a call-to-action in the form of a
+        popup (modal) that announces a sale price or newsletter. These are often
+        used to capture customers either via a direct sale or for follow up
+        media/content.
+      </p>
+      <pre>
+const modal = document.getElementById('myModal')
+const span = document.getElementsByClassName('close')[0]
+
+window.setTimeout(() => {
+  modal.style.display = 'block'
+}, 1000)
+
+span.onclick = function() {
+  modal.style.display = 'none'
+}</pre
+      >
+
+      <h2 id="links">SEO - Links</h2>
+      <p>
+        When building links into a website they should be used to provide
+        amplifying information, navigate to subcategories, to a third party,
+        etc. Depending on the type of website and the audience the types of
+        links are important too such as opening a new tab or navigating the
+        current tab. For example, a link that provides a free e-book download
+        shouldn't replace the current website tab as the user may end up leaving
+        the website early. Often these types of links are parts of the overall
+        sales funnel or user experience.
+      </p>
+      <p>Some general tips when building links are:</p>
+      <ol>
+        <li>A link should be able stand alone</li>
+        <li>Links should be descriptive</li>
+        <li>A link should start with a relevant keyword</li>
+        <li>Links should be unique</li>
+        <li>Plain text links should stick to the underlined text convention</li>
+        <li>
+          A link should be SEO friendly by being relevant to the target page
+        </li>
+        <li>A link shouldn't be overly keyword heavy</li>
+      </ol>
+      <h2 id="xml">SEO - XML</h2>
+      <p>
+        Web search engines routinely go through and index all website pages they
+        can access. One way they do this is by "poking" around the web and
+        following pages. One way to think of this is through an analogy of a
+        spider crawling through a maze. Sometimes if the spider doesn't
+        understand the content/pages it visits it will fail to index it
+        properly. For a website, this could mean it never reads your blog or the
+        awesome video you've uploaded. One of the ways to work around this
+        limitation of the search engines is to provide a map called a sitemap.
+        This website has a
+        <a href="../exercise1/sitemap.xml" target="_blank">sitemap</a>.
+      </p>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>JavaScript Timed Popup</h1>
+        <p>
+          This modal potentially will be used to showcase a sale or signing up
+          to a newsletter, etc.
+        </p>
+        <p>
+          Clicking the X in the upper right hand corner will close it.
+        </p>
+      </div>
+    </div>
+    <footer class="footer-nav">
+      <nav>
+        <a href="../exercise1/index.html">Home</a>
+        <a href="../exercise1/ex1.html">Exercise 1</a>
+        <a href="../exercise2/index.html">Exercise 2</a>
+        <a href="index.html">Exercise 3</a>
+        <a href="#">Exercise 4</a>
+      </nav>
+      <div class="validators">
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c24%2Fexercise3%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+          >CSS Validator</a
+        >
+        <a
+          href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386c24%2Fexercise3%2Findex.html"
+          >HTML5 Validator</a
+        >
+      </div>
+    </footer>
+    <script src="modal.js"></script>
+  </body>
 </html>
