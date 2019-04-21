@@ -448,6 +448,7 @@ ul.breadcrumb li a:hover {
           transform: translate(-50%, -50%);
   width: 50vw;
   z-index: 3;
+  background: rbga(0, 0, 0, 0.5);
 }
 
 .modal-content {
