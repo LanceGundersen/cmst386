@@ -1,0 +1,126 @@
+header
+  width: 100%
+  background: $gray
+  box-shadow: 0 0 5px 1px black
+  .container
+    max-width: 1400px
+    margin: 0 auto
+    padding: 0 3.125%
+    @include flexbox()
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    align-content: stretch
+    img
+      height: 75px
+    button
+      display: none
+      border: 0
+      outline: none
+      background: transparent
+      @media (max-width: 570px)
+        display: block
+    nav
+      @include flexbox()
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      align-content: stretch
+      @media (max-width: 570px)
+        @include flexbox()
+        flex-flow: column nowrap
+        justify-content: space-around
+        align-items: center
+        align-content: center
+        position: absolute
+        left: 0
+        top: 71px
+        width: 100%
+        a
+          background: $white
+          text-align: center
+          width: 100%
+  a
+    padding: 22px 10px
+    color: $darkpurple
+    &:hover
+      text-decoration: none
+      background: darken($gray, 10%)
+
+.btn
+  @include button($white, $darkpurple, 4px, 8px)
+
+main
+  .hero
+    background: url(../assets/img/home-bg.jpg) no-repeat center center
+    background-size: cover
+    .text
+      padding: 20% 10% 20% 10%
+      background-image: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.5))
+      text-align: right
+      color: $white
+      h1
+        font-size: 3em
+      p
+        font-size: 1.2rem
+        padding-bottom: 10px
+      a
+        margin: 10px
+  .about
+    @include bigBorder()
+    @include section()
+    background-color: $darkpurple
+    color: $white
+    img
+      width: 150px
+    .split
+      @include flexbox()
+      height: 100%
+      width: 600px
+      img
+        margin: 20px 30px 0 0
+        width: 250px
+        object-fit: contain
+        align-self: flex-start
+      .side
+        flex: 1 1 auto
+        align-self: center
+  .services
+    @include bigBorder()
+    @include section()
+  .process
+    @include bigBorder()
+    @include section()
+    background-color: $darkpurple
+    color: $white
+  .area
+    @include bigBorder()
+    @include section()
+    .mapouter
+      position: relative
+      text-align: right
+      height: 500px
+      width: 600px
+      margin: 0 auto
+    
+    .gmap_canvas
+      overflow: hidden
+      background: none
+      height: 500px
+      width: 600px
+    
+  .grid
+    @include flexbox()
+    padding: 25px
+    margin: 0 auto
+    .panel
+      img
+        max-height: 200px
+      background: $white
+      .head
+        text-align: center
+        .material-icons
+          font-size: 30px
+      .body
+        padding: 0 5px
+        

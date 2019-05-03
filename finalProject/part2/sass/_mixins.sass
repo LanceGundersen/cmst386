@@ -1,0 +1,28 @@
+@mixin flexbox()
+  display: flex
+
+@mixin flex($values)
+  flex: $values
+
+@mixin button($color, $text, $radius, $padding)
+  background: $color
+  border-radius: $radius
+  padding: $padding
+  color: $text
+  &:hover
+    text-decoration: none
+    background: darken($color, 8%)
+  &:active
+    background: darken($color, 10%)
+
+@mixin section()
+  padding: 125px
+  text-align: center
+  .small
+    max-width: 1400px
+    margin: 0 auto
+
+@mixin bigBorder()
+  border-top-width: 10px
+  border-color: $darkyellow
+  border-top-style: solid
