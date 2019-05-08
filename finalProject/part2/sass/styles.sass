@@ -3,36 +3,8 @@
 @import 'mixins'
 @import 'colors'
 @import 'variables'
+@import 'resets'
 
-body
-  background: $white
-  color: $dark
-  font-family: 'Open Sans', 'Roboto', sans-serif
-  font-size: 18px
-  margin: 0
-  a
-    text-decoration: none
-    color: $orangered
-    &:hover
-      text-decoration: underline
-
-@import 'pages/home'
-
-footer
-  width: 100%
-  background: $dark
-  .container
-    max-width: 1400px
-    margin: 0 auto
-    color: $white
-    @include flexbox()
-    flex-flow: row nowrap
-    justify-content: space-between
-    align-items: stretch
-    align-content: center
-    padding: 3.125%
-    img
-      height: 100px
-    .item:first-of-type
-      a
-        display: block
+@import 'partials/header'
+@import 'partials/home'
+@import 'partials/footer'
