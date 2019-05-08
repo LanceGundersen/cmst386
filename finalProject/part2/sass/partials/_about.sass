@@ -1,0 +1,22 @@
+main
+  .hero--about
+    background: url(../assets/img/interior-paint.jpg) no-repeat center top
+    background-size: cover
+    .text
+      padding: 10%
+      background-image: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.5))
+      text-align: center
+      color: $white
+      h1
+        font-size: 3em
+  .about-page
+    @include bigBorder()
+    @include for-phone-only
+      @include section-mobile()
+    @include for-tablet-portrait-up
+      @include section()
+    background-color: $darkpurple
+    color: $white
+    img
+      height: 125px
+  

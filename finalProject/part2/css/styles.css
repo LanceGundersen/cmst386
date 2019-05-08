@@ -6097,6 +6097,53 @@ main .area img {
   }
 }
 
+main .hero--about {
+  background: url(../assets/img/interior-paint.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+main .hero--about .text {
+  padding: 10%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  text-align: center;
+  color: #EFEFEF;
+}
+
+main .hero--about .text h1 {
+  font-size: 3em;
+}
+
+main .about-page {
+  border-top-width: 10px;
+  border-color: #ffc952;
+  border-top-style: solid;
+  background-color: #34314c;
+  color: #EFEFEF;
+}
+
+@media (max-width: 599px) {
+  main .about-page {
+    padding: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  main .about-page {
+    padding: 125px;
+    text-align: center;
+  }
+  main .about-page .small {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+main .about-page img {
+  height: 125px;
+}
+
 footer {
   width: 100%;
   background: #292929;
