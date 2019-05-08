@@ -4,6 +4,20 @@
 @mixin flex($values)
   flex: $values
 
+@mixin for-phone-only
+  @media (max-width: 599px) { @content }
+
+@mixin for-tablet-portrait-up
+  @media (min-width: 600px) { @content }
+
+@mixin for-tablet-landscape-up
+  @media (min-width: 900px) { @content }
+
+@mixin for-desktop-up
+  @media (min-width: 1200px) { @content }
+@mixin for-big-desktop-up
+  @media (min-width: 1800px) { @content }
+
 @mixin button($color, $text, $radius, $padding)
   background: $color
   border-radius: $radius
@@ -21,6 +35,10 @@
   .small
     max-width: 1400px
     margin: 0 auto
+
+@mixin section-mobile()
+  padding: 25px
+  text-align: center
 
 @mixin bigBorder()
   border-top-width: 10px

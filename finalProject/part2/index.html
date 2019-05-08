@@ -19,10 +19,7 @@
     <header>
       <div class="container">
         <img src="assets/img/logo.png" alt="Pro Home Painting Logo" />
-        <button id="menu-toggle">
-          <i class="material-icons">menu</i>
-        </button>
-        <nav id="nav">
+        <nav>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -31,6 +28,18 @@
           <a href="#">Service Area</a>
           <a href="#">Contact</a>
         </nav>
+        <div class="dropdown">
+          <i class="material-icons dropbtn">Menu</i>
+          <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Our Process</a>
+            <a href="#">F.A.Q.</a>
+            <a href="#">Service Area</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -47,7 +56,9 @@
       </div>
       <section class="about">
         <div class="small split">
-          <img src="assets/img/about.png" alt="About Us home Image" />
+          <div class="side--small">
+            <img src="assets/img/about.png" alt="About Us home Image" />
+          </div>
           <div class="side">
             <h2 class="text-center">About PHP</h2>
             <p>
@@ -140,20 +151,7 @@
             eligendi rerum veritatis consequatur earum exercitationem sit
             impedit non ea nesciunt cumque necessitatibus labore.
           </p>
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                width="600"
-                height="500"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=New%20London%2C%20CT&t=&z=9&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe>
-            </div>
-          </div>
+          <img src="assets/img/map-min.png" alt="Service Area Map" />
         </div>
       </section>
     </main>
