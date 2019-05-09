@@ -1,0 +1,23 @@
+main
+  h1
+    text-align: center
+    font-size: 3em    
+
+  .service
+    @include bigBorder()
+    @include for-phone-only
+      @include section-mobile()
+    @include for-tablet-portrait-up
+      @include section()
+    background: url(../assets/img/interior-paint.jpg) no-repeat center top
+    background-size: cover
+    .text
+      padding: 5%
+      background-image: linear-gradient(to right, rgba($darkpurple,.9), rgba($darkpurple,.9))
+      text-align: center
+      color: $white
+      p
+        margin-bottom: 50px
+    &:last-of-type
+      background: url(../assets/img/exterior-paint.jpg) no-repeat center center
+

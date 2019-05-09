@@ -1,0 +1,16 @@
+main
+  h1
+    text-align: center
+    font-size: 3em    
+
+  .restoration
+    @include bigBorder()
+    @include for-phone-only
+      @include section-mobile()
+    @include for-tablet-portrait-up
+      @include section()
+    background-color: $darkpurple
+    color: $white
+    img
+      height: 30vh
+

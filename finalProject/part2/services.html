@@ -8,7 +8,7 @@
     />
     <meta
       name="keywords"
-      content="painting, home painting, restorations, contractor, about"
+      content="painting, home painting, restorations, contractor, services"
     />
     <meta name="author" content="Lance Gundersen" />
     <meta name="copyright" content="Lance Gundersen" />
@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>PHP - About</title>
+    <title>PHP - Services</title>
   </head>
   <body>
     <header>
@@ -46,31 +46,118 @@
       </div>
     </header>
     <main>
-      <div class="hero--about">
+      <div class="hero--services">
         <div class="text">
-          <h1>About</h1>
+          <h1>Services</h1>
         </div>
       </div>
-      <section class="about-page">
-        <div>
-          <p>
-            Since 2001 Pro Home Painters, LLC has been serving the residents of
-            eastern Connecticut with Quality Painting Service. <br />We are a
-            full service house painting company. We have the resources and
-            experience necessary to meet all of your residential needs. We are a
-            highly motivated team and we are looking forward to working with you
-            on your upcoming paint projects. Please review our services and take
-            a look at some of our recent interior and exterior painting
-            projects. <br />We not only brush or roll paint on your walls but we
-            make sure we provide you with high quality painting at affordable
-            prices.
-          </p>
-          <img src="assets/img/sw-pro.png" alt="Sherwin Williams Pro Badge" />
-          <img src="assets/img/Lead.png" alt="EPA Lead Safe Badge" />
-          <img
-            src="assets/img/Veteran_logo.png"
-            alt="Veteran Owned Business Logo"
-          />
+      <section class="services">
+        <div class="grid">
+          <div class="panel">
+            <div class="video-container">
+              <video controls autoplay poster="assets/img/interior-paint.jpg">
+                <source src="assets/video/paintbrush.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="head">
+              <h3>Home Painting</h3>
+            </div>
+            <div class="body">
+              <p>
+                Our Experience with homes is superior because our main focus is
+                detail and cleanliness. We make sure furniture is covered with
+                plastic, floors with paper and painter’s tarps. We make sure the
+                walls and trim in your home are flawlessly prepped before any
+                primers or paint is applied. And finally we believe in using top
+                of the line materials and paints assuring a quality long lasting
+                paint job that you will appreciate. Our experienced team uses
+                the Pro Home Painters, LLC
+                <a href="process.html">step-by-step approach</a> to painting
+                homes.
+              </p>
+              <a href="homeservices.html" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="head">
+              <div class="video-container">
+                <video controls autoplay poster="assets/img/colonial.jpg">
+                  <source src="assets/video/roofcoating.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3>Restorations</h3>
+            </div>
+            <div class="body">
+              <p>
+                We are a full service “Exterior House Painting“ Company Serving
+                Connecticut. We have the resources and experience necessary to
+                meet all of your “Outdoor residential painting“ needs. We are
+                highly motivated and looking forward to working with you on your
+                upcoming outside paint projects. Please review our services and
+                take a look at some of are recent exterior projects. Pro Home
+                Painting is here to maintain your property. Our experienced team
+                uses the Pro Home Painters, LLC
+                <a href="process.html">step-by-step approach</a> to painting
+                homes.
+              </p>
+              <a href="restorationservices.html" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slideshow">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a
+              href="assets/img/colonial.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/img/colonial.jpg"
+                alt="Colonial Style Building Freshly Painted White"
+            /></a>
+
+            <div class="text">Colonial Restoration</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <a
+              href="assets/img/exterior-paint.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/img/exterior-paint.jpg"
+                alt="Unique Brick Freshly Painted Contrasting the Door"
+            /></a>
+            <div class="text">Brick Exterior Painting</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <a
+              href="assets/img/interior-paint.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/img/interior-paint.jpg"
+                alt="Worker painting the inside of a doorway"
+            /></a>
+            <div class="text">Interior Painting</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </section>
     </main>
@@ -80,6 +167,9 @@
           <p>
             <a href="privacy.html">Your Privacy</a>
             <a href="contact.html">Contact Us</a>
+            <a href="#">HTML Validation</a>
+            <a href="#">CSS Validation</a>
+            <a href="#">Sitemap</a>
           </p>
         </div>
         <img src="assets/img/logo-white.png" alt="Pro Home Painting Logo" />
