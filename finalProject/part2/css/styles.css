@@ -6144,6 +6144,33 @@ main .about-page img {
   height: 125px;
 }
 
+main .privacy-page {
+  border-top-width: 10px;
+  border-color: #ffc952;
+  border-top-style: solid;
+  background-color: #34314c;
+  color: #EFEFEF;
+  text-align: left !important;
+}
+
+@media (max-width: 599px) {
+  main .privacy-page {
+    padding: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  main .privacy-page {
+    padding: 125px;
+    text-align: center;
+  }
+  main .privacy-page .small {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
 footer {
   width: 100%;
   background: #292929;

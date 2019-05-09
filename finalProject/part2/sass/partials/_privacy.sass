@@ -1,0 +1,11 @@
+main
+  .privacy-page
+    @include bigBorder()
+    @include for-phone-only
+      @include section-mobile()
+    @include for-tablet-portrait-up
+      @include section()
+    background-color: $darkpurple
+    color: $white
+    text-align: left !important
+  
