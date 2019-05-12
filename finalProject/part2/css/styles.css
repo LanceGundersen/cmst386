@@ -5709,6 +5709,25 @@ readers do not read off random characters that represent icons */
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../assets/vendor/webfonts/fa-solid-900.eot");
+  src: url("../assets/vendor/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../assets/vendor/webfonts/fa-solid-900.woff2") format("woff2"), url("../assets/vendor/webfonts/fa-solid-900.woff") format("woff"), url("../assets/vendor/webfonts/fa-solid-900.ttf") format("truetype"), url("../assets/vendor/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+/*!
+ * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
@@ -6615,6 +6634,213 @@ main .restoration img {
     font-size: 18px;
     width: 80%;
   }
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left !important;
+  margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+  form {
+    padding: 25px;
+    text-align: center;
+    width: 300px;
+  }
+}
+
+@media (min-width: 600px) {
+  form {
+    padding: 125px;
+    text-align: center;
+    width: 500px;
+  }
+  form .small {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+form legend {
+  font-size: 1.2em;
+}
+
+form fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+form .field,
+form input,
+form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form .field {
+  position: relative;
+  width: 100%;
+}
+
+form .field .inline {
+  width: 100%;
+  display: inline;
+  margin: 10px;
+}
+
+form .field .inline input {
+  width: 15px;
+}
+
+form .field i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+
+form input,
+form button,
+form select {
+  position: relative;
+  apprearance: none;
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #C7C7C7;
+  background-color: #fafafa;
+  -webkit-transition: background-color .3s, border-color .4s;
+  transition: background-color .3s, border-color .4s;
+}
+
+form textarea {
+  position: relative;
+  apprearance: none;
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #C7C7C7;
+  background-color: #fafafa;
+  -webkit-transition: background-color .3s, border-color .4s;
+  transition: background-color .3s, border-color .4s;
+  height: 100px;
+}
+
+form input:focus, form textarea:focus, form input:hover, form textarea:hover {
+  outline: none;
+  border-color: #777;
+}
+
+form button {
+  display: block;
+  border: none;
+  background-color: #666;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+form button:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  line-height: 50px;
+  cursor: default;
+}
+
+form button:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  line-height: 50px;
+  cursor: default;
+  top: -100%;
+  content: attr(data-success);
+  background: #7aca7c;
+  color: #358337;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+form button:before {
+  top: 100%;
+  background: #e96a6a;
+  color: #a33a3a;
+  content: attr(data-error);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+form button.submit-success {
+  background: #aaa;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotateX(-90deg) translateY(100%);
+          transform: rotateX(-90deg) translateY(100%);
+}
+
+form button.submit-error {
+  background: #aaa;
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-transform: rotateX(90deg) translateY(-100%);
+          transform: rotateX(90deg) translateY(-100%);
+}
+
+form .success {
+  background-color: #EAFFF8;
+}
+
+form .success + i {
+  color: #1C9D39;
+  display: block;
+}
+
+form .error {
+  background-color: #FFF1FF;
+}
+
+form .error + i {
+  color: #B82020;
+  display: block;
 }
 
 main .privacy-page {
