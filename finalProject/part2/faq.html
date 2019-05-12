@@ -8,7 +8,7 @@
     />
     <meta
       name="keywords"
-      content="painting, home painting, restorations, contractor, about"
+      content="painting, home painting, restorations, contractor, faq, questions"
     />
     <meta name="author" content="Lance Gundersen" />
     <meta name="copyright" content="Lance Gundersen" />
@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>PHP - About</title>
+    <title>PHP - FAQ</title>
   </head>
   <body>
     <header>
@@ -46,7 +46,59 @@
       </div>
     </header>
     <main>
-      <h1>FAQ</h1>
+      <div class="hero--services">
+        <div class="text">
+          <h1>FAQ</h1>
+        </div>
+      </div>
+      <section class="faq">
+        <div class="faq-header">Frequently Asked Questions</div>
+
+        <div class="faq-content">
+          <div class="faq-question">
+            <input id="q1" type="checkbox" class="faq-panel" />
+            <label for="q1" class="panel-title"
+              ><div class="plus">></div>
+              What types of payment do we take?</label
+            >
+            <div class="panel-content">
+              We take cash, check and credit cards conveniently on site or prior
+              to the job.
+            </div>
+          </div>
+
+          <div class="faq-question">
+            <input id="q2" type="checkbox" class="faq-panel" />
+            <label for="q2" class="panel-title"
+              ><div class="plus">></div>
+              Do we offer payment plans?</label
+            >
+            <div class="panel-content">
+              We do not but we do suggest you talk to your local bank or credit
+              union as they often provide small reasonably priced loans for such
+              things as this.
+            </div>
+          </div>
+
+          <div class="faq-question">
+            <input id="q3" type="checkbox" class="faq-panel" />
+            <label for="q3" class="panel-title"
+              ><div class="plus">></div>
+              How do we handle lead based paints?</label
+            >
+            <div class="panel-content">
+              We adhere to the lead certification program offered by the EPA.
+              Read more on the
+              <a
+                href="https://www.epa.gov/lead/learn-about-lead"
+                target="_blank"
+                >EPA</a
+              >
+              lead information website.
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
@@ -69,7 +121,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
